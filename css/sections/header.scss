@@ -1,6 +1,6 @@
 .header{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -21,10 +21,14 @@
   align-items: center;
   font-weight: 400;
   font-family: "Alegreya Sans";
+  margin: 0 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu__item{
   margin-right: rem(15px);
+  margin-top: rem(10px);
 
   &:last-child{
     margin-right: 0;
@@ -40,13 +44,20 @@
   font-weight: 400;
 }
 
+.phone-number__text{
+  white-space: nowrap;
+}
+
 .phone-number__icon{
   width: rem(18px);
   height: rem(18px);
   margin-right: rem(6px);
 
+  flex-shrink: 0;
+
 }
 
 .menu__link{
   text-decoration: none;
+  white-space: nowrap;
 }

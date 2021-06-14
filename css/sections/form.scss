@@ -1,5 +1,10 @@
 .form{
   display: flex;
+  
+  @include tablets{
+  flex-direction:column;
+  padding: 0 19%;
+  }
 }
 
 .form__col{
@@ -15,8 +20,16 @@
   display: flex;
   margin-bottom: rem(18px);
 
+  @include tablets{
+    margin-bottom: 14px;
+  }
+
   &:last-child{
     margin-bottom: 0;
+    
+    @include tablets{
+      margin-bottom: 14px;
+    }
   }
 }
 
@@ -36,10 +49,18 @@
   border:solid rem(3px) transparent;
   border-radius: rem(4px);
 
+  @include tablets{
+    padding: rem(13px);
+  }
+
   &--textarea{
     height: rem(160px);
     resize: none;
     margin-bottom: rem(15px);
+
+    @include tablets{
+      width: rem(450px);
+    }
   }
 
   &:focus{
@@ -53,6 +74,10 @@
   flex-wrap: wrap;
   margin-bottom: rem(12px);
 
+  @include tablets{
+    margin-bottom: rem(28px);
+  }
+
   &:last-child{
     margin-bottom: 0;
   }
@@ -60,5 +85,12 @@
 
 .form__col-wrapper{
   margin-bottom: rem(50px);
+}
+
+.form__btns{
+  @include tablets{
+    text-align: center;
+    align-items: center;
+  }
 }
 

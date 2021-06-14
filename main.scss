@@ -1,10 +1,9 @@
-@import 'https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700;800&display=swap';
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
-@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
-@import "layout";
-@import './css/sections/media.scss';
 @import "./css/sections/hero.scss";
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
+@import 'https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700;800&display=swap';
+@import "layout";
 @import "./css/sections/header.scss";
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @import "./css/sections/features.scss";
 @import './css/sections/feature.scss';
 @import './css/sections/section.scss';
@@ -17,14 +16,24 @@
 @import './css/sections/form.scss';
 @import './css/sections/radio.scss';
 @import './css/sections/fixed-menu.scss';
-@import './css/sections/map-section.scss';
+@import './css/sections/media.scss';
+
+$containerWidth: 940px;
+$baseFontSize: 18px;  
+$z-fixed-menu: 100;
+
+$red: #E01F3D;
+$grey: #666666;
+$black: #292929;
+$white: #FFFFFF;
+
 .btn{
   outline: none;
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 800;
   color: $white;
-  border: $red solid 2px;
-  border-radius: 35px;
+  border: $red solid rem(2px);
+  border-radius: rem(35px);
   text-transform: uppercase;
   background: $red;
   text-decoration: none;
@@ -39,12 +48,12 @@
 }
 
 .btn--margin{
-  margin-right: 20px;
+  margin-right: rem(20px);
 }
 
 .btn--theme--clear{
   outline: none;
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 400;
   color: $white;
   text-transform: uppercase;
@@ -60,14 +69,3 @@
   border-color: none;
 }
 
-html{
-  font-size: $baseFontSize;
-
-  @include tablets{
-    font-size: $baseFontSize - 1px;
-  }
-  
-  @include phones{
-    font-size: $baseFontSize - 2px;
-  }
-}
