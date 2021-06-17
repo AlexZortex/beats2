@@ -5,6 +5,10 @@
   flex-direction:column;
   padding: 0 19%;
   }
+
+  @include phones{
+    padding: 0;
+  }
 }
 
 .form__col{
@@ -61,11 +65,20 @@
     @include tablets{
       width: rem(450px);
     }
+
+    @include phones{
+      width: rem(480px);
+    }
+
   }
 
   &:focus{
     border-color: #E01F3D;
     outline: none;
+  }
+
+  @include tablets{
+    height: 54%;
   }
 }
 
@@ -76,6 +89,11 @@
 
   @include tablets{
     margin-bottom: rem(28px);
+  }
+
+  @include phones{
+    align-items: center;
+    justify-content: center;
   }
 
   &:last-child{

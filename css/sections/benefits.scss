@@ -1,6 +1,20 @@
 .benefits{
   display: flex;
+
+  @include phones{
+    flex-direction: column;
+  }
 }
+
+// .benefits__items{
+//   flex: 1;
+//   padding: 0 3%;
+//   position: relative;
+
+//   @include phones{
+//     padding: 0;
+//   }
+// }
 
 .benefits__section{
   position: relative;
@@ -26,7 +40,8 @@
 
 .orders-section{
   position: relative;
- 
+  background-size: 100%; 
+
    &:before{
      content: url(../img/decorate/geksogon.png); 
      position: absolute;

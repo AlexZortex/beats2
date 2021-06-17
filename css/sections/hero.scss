@@ -70,11 +70,17 @@
   padding-right: 22%;
   margin-bottom: rem(45px);
 
+
+
   @include tablets{
     text-align: center;
     margin: 0 auto;
     margin-bottom: rem(24px);
     padding: 0 20%;
+  }
+
+  @include phones{
+    padding: 0 16%;
   }
 }
 

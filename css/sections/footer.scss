@@ -1,0 +1,39 @@
+.footer{
+  min-height: rem(86px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__text-info{
+  display: flex;
+  font-family: 'Play';
+  font-weight: 400;
+  font-style: normal;
+  font-size: rem(18px);
+  margin: 0;
+}
+
+.contacts__phone{
+  font-family: 'Play';
+  font-weight: 400;
+  font-style: normal;
+  font-size: rem(18px);
+  text-decoration: none;
+}
+
+.phone-number__footer{
+  font-size: rem(18px);
+  text-decoration: none;
+  font-family: "Play";
+  font-weight: 400;
+}
+
+.phone-number__text{
+  white-space: nowrap;
+}
+
+.phone-icon{
+  fill: black;
+}
