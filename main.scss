@@ -19,6 +19,7 @@
 @import './css/sections/fixed-menu.scss';
 @import './css/sections/map-section.scss';
 @import './css/sections/hamburger.scss';
+@import './css/sections/footer.scss';
 .btn{
   outline: none;
   font-size: 16px;
@@ -54,6 +55,10 @@
   background: none;
   border:none;
   border-color: none;
+
+  @include tablets{
+    color: #CA1B36;
+  }
 }
 .btn--theme--clear:hover{
   background: none;
