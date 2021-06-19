@@ -1009,7 +1009,9 @@ img {
 }
 
 .socials__list.social__item {
-  display: inline;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .social__item {
