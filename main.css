@@ -1012,6 +1012,10 @@ img {
   display: inline;
 }
 
+.social__item {
+  margin-right: 10px;
+}
+
 .btn {
   outline: none;
   font-size: 16px;
