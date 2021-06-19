@@ -23,6 +23,11 @@
 .socials-icons {
   width: 30px;
   height: 30px;
+  margin-right: 10px;
+  fill: #b3b3b3;
+}
+.socials-icons:hover {
+  fill: #000;
 }
 .socials-icons:last-child {
   margin-right: 0;
