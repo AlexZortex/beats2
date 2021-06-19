@@ -1008,7 +1008,7 @@ img {
   display: flex;
 }
 
-.socials__list.social__item {
+.socials__list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
