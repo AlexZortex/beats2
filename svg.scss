@@ -20,6 +20,12 @@
   transform: translate(-50%,-50%);
 }
 
-.why-icons{
-  y:2px;
+.socials-icons{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+
+  &:last-child{
+    margin-right: 0;
+  }
 }
