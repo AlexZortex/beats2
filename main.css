@@ -1008,6 +1008,10 @@ img {
   display: flex;
 }
 
+.socials__list.social__item {
+  display: inline;
+}
+
 .btn {
   outline: none;
   font-size: 16px;
