@@ -962,6 +962,9 @@ img {
 
 .footer {
   min-height: 4.7777777778rem;
+}
+
+.footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
