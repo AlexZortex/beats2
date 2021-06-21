@@ -2,12 +2,14 @@
   width: 14px;
   height: 14px;
   margin-right: 6px;
+  fill: black;
 }
 
 .icon-icons {
   width: 41px;
   height: 41px;
   margin-right: 11px;
+  fill: black;
 }
 
 .icon-feat {
@@ -18,6 +20,8 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+
+  fill: black;
 }
 
 .socials-icons {
